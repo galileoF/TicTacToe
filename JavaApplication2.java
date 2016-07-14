@@ -87,7 +87,7 @@ public class JavaApplication2 extends Application {
 
         MenuBar bar = new MenuBar();
         Menu game = new Menu("Game");
-        Menu edit = new Menu("Help");
+        Menu help = new Menu("Help");
 
         MenuItem gameNew = new MenuItem("New");
         MenuItem gameExit = new MenuItem("Exit");
@@ -98,7 +98,7 @@ public class JavaApplication2 extends Application {
                 Platform.exit();
             }
         });
-        bar.getMenus().addAll(game, edit);
+        bar.getMenus().addAll(game, help);
         BorderPane layout = new BorderPane();
         layout.setTop(bar);
         layout.setCenter(gridPane);
